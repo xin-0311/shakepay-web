@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --brand_color: #6268FF;
+  --brand_color_02: rgba(98, 104, 255, 0.10);
+  --brand_color_03: #3B3E99;
+  --text_color_01: #8E8D8D;
+  --text_color_02: #575353;
+  --text_color_03: #100;
+  --bg_color_01: #C7C7C8;
+  --bg_color_02: rgba(255, 255, 255, 0.05);
+  --bg_color_03: rgba(199, 199, 200, 0.10);
+  --bg_color_04: rgba(199, 199, 200, 0.2);
+  --bg_color_05: rgba(199, 199, 200, 0.25);
+  --bg_color_06: rgba(199, 199, 200, 0.5);
+  --border_color_01: rgba(255, 255, 255, 0.50);
+  --border_color_02: rgba(142, 141, 141, 0.20);
+  --shadow_color_01: "0px 10px 30px 0px rgba(0, 0, 0, 0.25)";
+  --shadow_color_02: "0px 5px 20px 0px rgba(98, 104, 255, 0.50)";
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --brand_color: #6268FF;
+    --text_color_01: #8E8D8D;
+    --text_color_02: #575353;
+    --bg_color_01: #C7C7C8;
+    --bg_color_02: rgba(255, 255, 255, 0.05);
+    --bg_color_03: rgba(199, 199, 200, 0.10);
+    --bg_color_04: rgba(199, 199, 200, 0.25);
+    --bg_color_05: rgba(199, 199, 200, 0.25);
+    --border_color_01: rgba(255, 255, 255, 0.50);
+    --shadow_color_01: "0px 10px 30px 0px rgba(0, 0, 0, 0.25)";
+    --shadow_color_02: "0px 5px 20px 0px rgba(98, 104, 255, 0.50)";
+  }
+} */
+
+body {
+  overflow: auto;
+  @media (min-width: 1028px) {
+    min-width: 1440px;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background: linear-gradient(90deg, #6268FF 0%, #3B3E99 100%);
+  }
+
+  .shadow-primary {
+    box-shadow: 0px 5px 20px 0px rgba(98, 104, 255, 0.50);
+  }
+
+  .custom-h-divider {
+    @apply w-full border-t border-border_color_02;
+  }
+}
